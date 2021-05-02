@@ -4,4 +4,4 @@
 |logo| OSE course projects
 ==========================
 
-.. Please see our `online materials <https://ose-data-science.readthedocs.io>`_ for details.
+Please see our `online materials <https://ose-course-projects.readthedocs.io/>`_ for details.
