@@ -1,0 +1,39 @@
+name: ose-course-projects
+
+channels:
+- defaults
+- conda-forge
+- opensourceeconomics
+
+dependencies:
+- python=3.7
+- numpy
+- pandas
+- matplotlib
+- sphinx
+- flake8
+- pytest
+- pygraphviz
+- pytest-black
+- pytest-flake8
+- scipy
+- jupyterlab
+- xlrd
+- jupyter
+- ipython
+- pip
+- nbsphinx
+- nb_black
+- chaospy
+- respy
+- pip:
+  - xlwt
+  - seaborn
+  - statsmodels
+  - linearmodels
+  - black-nb
+  - flake8-nb
+  - kernreg
+  - grmpy
+  - sphinx_rtd_theme
+  - sphinxcontrib-bibtex

@@ -1,0 +1,13 @@
+version: 2
+
+build:
+  image: latest
+
+python:
+  version: 3.7
+
+conda:
+  environment: configurations/rtd.yml
+  
+formats:
+  - pdf
