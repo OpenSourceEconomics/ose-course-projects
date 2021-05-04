@@ -1,7 +1,7 @@
 Collaboration projects
 ======================
 
-We set up collaboration projects with our partners from the private sector. These allow students to directly put the skills acquired during class into action. We announce collaboration projects in class and also discuss there how to apply.
+We set up collaboration projects with our partners from the private sector. These allow students to directly put the skills acquired during class into action, gain hands-on experience in a professional data science setting, and receive feedback and mentoring from seasoned data scientists. We announce collaboration projects in class and also discuss there how to apply.
 
 Daimler AG
 ----------
