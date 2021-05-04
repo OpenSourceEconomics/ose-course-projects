@@ -10,7 +10,7 @@
 ==========================
 
 .. image:: https://github.com/OpenSourceEconomics/ose-course-projects/workflows/Continuous%20Integration/badge.svg
-    :target: https://github.com/HumanCapitalAnalysis/ose-data-science/actions
+    :target: https://github.com/OpenSourceEconomics/ose-course-projects/actions
 
 .. image:: https://img.shields.io/badge/code%20style-black-000000.svg
     :target: https://github.com/psf/black
@@ -25,14 +25,13 @@
     :target: https://ose-course-projects.readthedocs.io
 
 
-This documentation includes basic instructions for OSE course projects. We will make heavy use of `Python <https://www.python.org>`_ and its `SciPy ecosystem <https://www.scipy.org>`_ as well as `Jupyter Notebooks <https://jupyter.org>`_.
-
+Our two courses `OSE data science <https://ose-data-science.readthedocs.io>`_ and `OSE scientific computing <https://ose-data-science.readthedocs.io>`_ both requires students to work on their projects independently. This documentation includes some basic instructions and example projects.
 
 .. toctree::
    :maxdepth: 1
 
-   examples/index
-   daimler_project/index
+   replications/index
+   collaborations/index
    frequently-asked-questions/index
 
 

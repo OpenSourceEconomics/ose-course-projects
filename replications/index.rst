@@ -1,8 +1,22 @@
-############
-Examples
-############
+####################
+Replication projects
+####################
 
-Here are some example projects from `OSE data science course <https://ose-data-science.readthedocs.io/en/latest/index.html>`_.
+A typical replication notebook has the following structure:
+
+* presentation of baseline article with proper citation and brief summary
+
+* using causal graphs to illustrate the authors' identification strategy
+
+* replication of selected key results
+
+* critical assessment of quality
+
+* independent contribution, e.g. additional external evidence, robustness checks, visualization
+
+There might be good reason to deviate from this structure. If so, please simply document your reasoning and go ahead. Please use the opportunity to review other student projects for some inspirations as well.
+
+Here are some examples of replication projects from earlier iterations of the `OSE data science course <https://ose-data-science.readthedocs.io/en/latest/index.html>`_.
 
 ==============
 Angrist (1990)
