@@ -32,6 +32,7 @@ This documentation includes basic instructions for OSE course projects. We will 
    :maxdepth: 1
 
    examples/index
+   daimler_project/index
    frequently-asked-questions/index
 
 
