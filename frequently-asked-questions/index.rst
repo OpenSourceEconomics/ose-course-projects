@@ -1,8 +1,6 @@
-################################
-Frequently Asked Questions (FAQ)
-################################
-
-Here are some frequently asked questions about the course:
+####
+FAQs
+####
 
 Do we need to report on the progress of our project?
 =====================================================
