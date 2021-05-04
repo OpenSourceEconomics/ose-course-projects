@@ -16,4 +16,4 @@ Building locally
    $ conda activate ose-course-projects
    $ make html
 
-And the homepage is at ``build/html/index.html``.
+And the homepage is at ``_build/html/index.html``.
