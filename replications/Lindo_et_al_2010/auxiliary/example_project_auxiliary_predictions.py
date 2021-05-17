@@ -2,13 +2,13 @@
 import json
 
 import matplotlib as plt
-import pandas as pd
 import numpy as np
+import pandas as pd
 import statsmodels as sm
-
-from auxiliary.example_project_auxiliary_predictions import *
 from auxiliary.example_project_auxiliary_plots import *
+from auxiliary.example_project_auxiliary_predictions import *
 from auxiliary.example_project_auxiliary_tables import *
+
 
 def prepare_data(data):
     """
@@ -61,7 +61,7 @@ def calculate_bin_frequency(data, bins):
 
 def create_groups_dict(data, keys, columns):
     """
-    Function creates a dictionary containing different subsets of a dataset. Subsets are created using dummies. 
+    Function creates a dictionary containing different subsets of a dataset. Subsets are created using dummies.
 
     Args:
     ------
@@ -82,42 +82,50 @@ def create_groups_dict(data, keys, columns):
 
 
 def create_predictions(data, outcome, regressors, bandwidth):
-    
+
     steps = np.arange(-1.2, 1.25, 0.05)
     predictions_df = pd.DataFrame([])
     # Ensure there are no missings in the outcome variable.
     data = data.dropna(subset=[outcome])
     # Loop through bins or 'steps'.
     for step in steps:
-        df = data[(data.dist_from_cut >= (step - bandwidth)) &
-                  (data.dist_from_cut <= (step + bandwidth))]
+        df = data[
+            (data.dist_from_cut >= (step - bandwidth))
+            & (data.dist_from_cut <= (step + bandwidth))
+        ]
         # Run regression for with all values in the range specified above.
         model = sm.regression.linear_model.OLS(
-            df[outcome], df[regressors], hasconst=True)
-        result = model.fit(cov_type='cluster', cov_kwds={
-                           'groups': df['clustervar']})
+            df[outcome], df[regressors], hasconst=True
+        )
+        result = model.fit(cov_type="cluster", cov_kwds={"groups": df["clustervar"]})
 
         # Fill in row for each step in the prediction datframe.
-        predictions_df.loc[step, 'dist_from_cut'] = step
+        predictions_df.loc[step, "dist_from_cut"] = step
         if step < 0:
-            predictions_df.loc[step, 'gpalscutoff'] = 1
+            predictions_df.loc[step, "gpalscutoff"] = 1
         else:
-            predictions_df.loc[step, 'gpalscutoff'] = 0
+            predictions_df.loc[step, "gpalscutoff"] = 0
 
-        predictions_df.loc[step, 'gpaXgpalscutoff'] = (
-            predictions_df.loc[step, 'dist_from_cut']) * predictions_df.loc[step, 'gpalscutoff']
-        predictions_df.loc[step, 'gpaXgpagrcutoff'] = (predictions_df.loc[
-                                                       step, 'dist_from_cut']) * (1 - predictions_df.loc[step, 'gpalscutoff'])
-        predictions_df.loc[step, 'const'] = 1
+        predictions_df.loc[step, "gpaXgpalscutoff"] = (
+            predictions_df.loc[step, "dist_from_cut"]
+        ) * predictions_df.loc[step, "gpalscutoff"]
+        predictions_df.loc[step, "gpaXgpagrcutoff"] = (
+            predictions_df.loc[step, "dist_from_cut"]
+        ) * (1 - predictions_df.loc[step, "gpalscutoff"])
+        predictions_df.loc[step, "const"] = 1
 
         # Make prediction for each step based on regression of each step and
         # save value in the prediction dataframe.
-        predictions_df.loc[step, 'prediction'] = result.predict(exog=[[
-            predictions_df.loc[step, 'const'],
-            predictions_df.loc[step, 'gpalscutoff'],
-            predictions_df.loc[step, 'gpaXgpalscutoff'],
-            predictions_df.loc[step, 'gpaXgpagrcutoff']
-        ]])
+        predictions_df.loc[step, "prediction"] = result.predict(
+            exog=[
+                [
+                    predictions_df.loc[step, "const"],
+                    predictions_df.loc[step, "gpalscutoff"],
+                    predictions_df.loc[step, "gpaXgpalscutoff"],
+                    predictions_df.loc[step, "gpaXgpagrcutoff"],
+                ]
+            ]
+        )
 
     predictions_df.round(4)
 
@@ -125,26 +133,28 @@ def create_predictions(data, outcome, regressors, bandwidth):
 
 
 def create_bin_frequency_predictions(data, steps, bandwidth):
-    """
-    
-    """
+    """"""
     predictions_df = pd.DataFrame([])
     # Loop through bins or 'steps'.
     for step in steps:
-        df = data[(data.bins >= (step - bandwidth)) &
-                  (data.bins <= (step + bandwidth))]
+        df = data[(data.bins >= (step - bandwidth)) & (data.bins <= (step + bandwidth))]
         # Run regression for with all values in the range specified above.
         model = sm.regression.linear_model.OLS(
-            df['freq'], df[['const', 'bins']], hasconst=True)
+            df["freq"], df[["const", "bins"]], hasconst=True
+        )
         result = model.fit()
 
         # Fill in row for each step in the prediction datframe.
-        predictions_df.loc[step, 'bins'] = step
-        predictions_df.loc[step, 'const'] = 1
-        predictions_df.loc[step, 'prediction'] = result.predict(exog=[[predictions_df.loc[step, 'const'],
-                                                                       predictions_df.loc[
-                                                                           step, 'bins'],
-                                                                       ]])
+        predictions_df.loc[step, "bins"] = step
+        predictions_df.loc[step, "const"] = 1
+        predictions_df.loc[step, "prediction"] = result.predict(
+            exog=[
+                [
+                    predictions_df.loc[step, "const"],
+                    predictions_df.loc[step, "bins"],
+                ]
+            ]
+        )
 
     predictions_df.round(4)
 
@@ -155,7 +165,7 @@ def create_fig3_predictions(groups_dict, regressors, bandwidth):
     """
     Compute predicted outcomes for figure 3.
     """
-    
+
     predictions_groups_dict = {}
     # Loop through groups:
     for group in groups_dict:
@@ -166,39 +176,49 @@ def create_fig3_predictions(groups_dict, regressors, bandwidth):
         # Loop through bins or 'steps'.
         for step in steps:
             # Select dataframe from the dictionary.
-            df = groups_dict[group][(groups_dict[group].dist_from_cut >= (step - bandwidth)) &
-                                    (groups_dict[group].dist_from_cut <= (step + bandwidth))]
+            df = groups_dict[group][
+                (groups_dict[group].dist_from_cut >= (step - bandwidth))
+                & (groups_dict[group].dist_from_cut <= (step + bandwidth))
+            ]
             # Run regression for with all values in the range specified above.
             model = sm.regression.linear_model.OLS(
-                df['left_school'], df[regressors], hasconst=True)
-            result = model.fit(cov_type='cluster', cov_kwds={
-                               'groups': df['clustervar']})
+                df["left_school"], df[regressors], hasconst=True
+            )
+            result = model.fit(
+                cov_type="cluster", cov_kwds={"groups": df["clustervar"]}
+            )
 
             # Fill in row for each step in the prediction datframe.
-            predictions_df.loc[step, 'dist_from_cut'] = step
+            predictions_df.loc[step, "dist_from_cut"] = step
             if step < 0:
-                predictions_df.loc[step, 'gpalscutoff'] = 1
+                predictions_df.loc[step, "gpalscutoff"] = 1
             else:
-                predictions_df.loc[step, 'gpalscutoff'] = 0
+                predictions_df.loc[step, "gpalscutoff"] = 0
 
-            predictions_df.loc[step, 'gpaXgpalscutoff'] = (
-                predictions_df.loc[step, 'dist_from_cut']) * predictions_df.loc[step, 'gpalscutoff']
-            
-            predictions_df.loc[step, 'gpaXgpagrcutoff'] = (
-                predictions_df.loc[step, 'dist_from_cut']) * (1 - predictions_df.loc[step, 'gpalscutoff'])
-            predictions_df.loc[step, 'const'] = 1
+            predictions_df.loc[step, "gpaXgpalscutoff"] = (
+                predictions_df.loc[step, "dist_from_cut"]
+            ) * predictions_df.loc[step, "gpalscutoff"]
+
+            predictions_df.loc[step, "gpaXgpagrcutoff"] = (
+                predictions_df.loc[step, "dist_from_cut"]
+            ) * (1 - predictions_df.loc[step, "gpalscutoff"])
+            predictions_df.loc[step, "const"] = 1
 
             # Make prediction for each step based on regression of each step
             # and save value in the prediction dataframe.
-            predictions_df.loc[step, 'prediction'] = result.predict(exog=[[
-                predictions_df.loc[step, 'const'],
-                predictions_df.loc[step, 'gpalscutoff'],
-                predictions_df.loc[step, 'gpaXgpalscutoff'],
-                predictions_df.loc[step, 'gpaXgpagrcutoff']
-            ]])
+            predictions_df.loc[step, "prediction"] = result.predict(
+                exog=[
+                    [
+                        predictions_df.loc[step, "const"],
+                        predictions_df.loc[step, "gpalscutoff"],
+                        predictions_df.loc[step, "gpaXgpalscutoff"],
+                        predictions_df.loc[step, "gpaXgpagrcutoff"],
+                    ]
+                ]
+            )
 
             predictions_df = predictions_df.round(4)
-            
+
         # Save the predictions for all groups in a dictionary.
         predictions_groups_dict[group] = predictions_df
 
@@ -213,8 +233,9 @@ def bootstrap_predictions(n, data, outcome, regressors, bandwidth):
     for i in range(0, n):
         bootstrap = data.sample(n=len(data), replace=True)
         pred = create_predictions(
-            data=bootstrap, outcome=outcome, regressors=regressors, bandwidth=bandwidth)
-        bootstrap_pred['pred_' + str(i)] = pred.prediction
+            data=bootstrap, outcome=outcome, regressors=regressors, bandwidth=bandwidth
+        )
+        bootstrap_pred["pred_" + str(i)] = pred.prediction
         i = +1
     return bootstrap_pred
 
@@ -225,14 +246,17 @@ def get_confidence_interval(data, lbound, ubound, index_var):
     """
     confidence_interval = pd.DataFrame({})
     for i in data.index:
-        confidence_interval.loc[i, "lower_bound"] = np.percentile(data.loc[
-                                                                  i, :], lbound)
-        confidence_interval.loc[i, "upper_bound"] = np.percentile(data.loc[
-                                                                  i, :], ubound)
+        confidence_interval.loc[i, "lower_bound"] = np.percentile(
+            data.loc[i, :], lbound
+        )
+        confidence_interval.loc[i, "upper_bound"] = np.percentile(
+            data.loc[i, :], ubound
+        )
 
-    confidence_interval[index_var] = confidence_interval.index 
-    
+    confidence_interval[index_var] = confidence_interval.index
+
     return confidence_interval
+
 
 def bandwidth_sensitivity_summary(
     data, outcome, groups_dict_keys, groups_dict_columns, regressors
@@ -240,14 +264,38 @@ def bandwidth_sensitivity_summary(
     """
     Creates table that summarizes the results for the analysis of bandwidth sensitivity.
     """
-    #from auxiliary.auxiliary_tables import estimate_RDD_multiple_datasets
+    # from auxiliary.auxiliary_tables import estimate_RDD_multiple_datasets
 
     bandwidths = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2]
     arrays = [
-        np.array([0.1, 0.1, 0.2, 0.2, 0.3, 0.3, 0.4, 0.4,
-                  0.5, 0.5, 0.6, 0.6, 0.7, 0.7, 0.8, 0.8,
-                  0.9, 0.9, 1, 1, 1.1, 1.1, 1.2, 1.2, ]
-                 ),
+        np.array(
+            [
+                0.1,
+                0.1,
+                0.2,
+                0.2,
+                0.3,
+                0.3,
+                0.4,
+                0.4,
+                0.5,
+                0.5,
+                0.6,
+                0.6,
+                0.7,
+                0.7,
+                0.8,
+                0.8,
+                0.9,
+                0.9,
+                1,
+                1,
+                1.1,
+                1.1,
+                1.2,
+                1.2,
+            ]
+        ),
         np.array(["probation", "p-value"] * 12),
     ]
 
@@ -255,8 +303,7 @@ def bandwidth_sensitivity_summary(
 
     for val in bandwidths:
         sample = data[abs(data["dist_from_cut"]) < val]
-        groups_dict = create_groups_dict(
-            sample, groups_dict_keys, groups_dict_columns)
+        groups_dict = create_groups_dict(sample, groups_dict_keys, groups_dict_columns)
         table = estimate_RDD_multiple_datasets(
             groups_dict, groups_dict_keys, outcome, regressors
         )
@@ -272,8 +319,8 @@ def bandwidth_sensitivity_summary(
 
 
 def trim_data(groups_dict, trim_perc, case1, case2):
-    """ Creates trimmed data for upper and lower bound analysis by trimming the top and bottom percent of 
-    students from control or treatment group. This can be used for the upper bound and lower bound. 
+    """Creates trimmed data for upper and lower bound analysis by trimming the top and bottom percent of
+    students from control or treatment group. This can be used for the upper bound and lower bound.
     * For lower bound use `case1 = True` and `case2 = False`
     * For upper bound use `case1 = False` and `case2 = True`.
 
@@ -320,8 +367,7 @@ def trim_data(groups_dict, trim_perc, case1, case2):
             treat.sort_values("nextGPA", inplace=True, ascending=case2)
             trimmed_students = treat.iloc[0:n]
             trimmed_students_ids = list(trimmed_students.identifier)
-            trimmed_treat = treat[treat.identifier.isin(
-                trimmed_students_ids) == False]
+            trimmed_treat = treat[treat.identifier.isin(trimmed_students_ids) == False]
             df = pd.concat([trimmed_treat, control], axis=0)
 
         trimmed_dict[key] = df

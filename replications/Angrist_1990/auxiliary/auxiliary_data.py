@@ -3,7 +3,9 @@ import pandas as pd
 
 def process_data(data_name):
     if data_name == "cwhsa":
-        data = pd.read_stata("data/cwhsa.dta").drop(columns=["vnms1", "ltax", "xltax", "ctr1"])
+        data = pd.read_stata("data/cwhsa.dta").drop(
+            columns=["vnms1", "ltax", "xltax", "ctr1"]
+        )
         data.columns = [
             "birth year",
             "ethnicity",
@@ -20,7 +22,9 @@ def process_data(data_name):
             drop=True,
         )
     elif data_name == "cwhsb":
-        data = pd.read_stata("data/cwhsb.dta").drop(columns=["vnms1", "ltax", "xltax", "ctr1"])
+        data = pd.read_stata("data/cwhsb.dta").drop(
+            columns=["vnms1", "ltax", "xltax", "ctr1"]
+        )
         data.columns = [
             "birth year",
             "ethnicity",
