@@ -1,15 +1,12 @@
-"""This module contains auxiliary functions for plotting which are used in the main notebook."""
+"""Auxiliary functions for plotting which are used in the main notebook."""
 import matplotlib as plt
-import numpy as np
 import pandas as pd
-import statsmodels as sm
-from auxiliary.example_project_auxiliary_plots import *
-from auxiliary.example_project_auxiliary_predictions import *
-from auxiliary.example_project_auxiliary_tables import *
 
 
 def plot_RDD_curve(df, running_variable, outcome, cutoff):
-    """Function to plot RDD curves. Function splits dataset into treated and untreated group based on running variable
+    """Plot RDD curves.
+    
+    Function splits dataset into treated and untreated group based on running variable
     and plots outcome (group below cutoff is treated, group above cutoff is untreated).
 
     Args:
@@ -33,7 +30,9 @@ def plot_RDD_curve(df, running_variable, outcome, cutoff):
 
 
 def plot_RDD_curve_colored(df, running_variable, outcome, cutoff, color):
-    """Function to plot RDD curves. Function splits dataset into treated and untreated group based on running variable
+    """Plot RDD curves. 
+    
+    Function splits dataset into treated and untreated group based on running variable
     and plots outcome (group below cutoff is treated, group above cutoff is untreated).
 
     Args:
@@ -58,9 +57,10 @@ def plot_RDD_curve_colored(df, running_variable, outcome, cutoff, color):
 def plot_RDD_curve_CI(
     df, running_variable, outcome, cutoff, lbound, ubound, CI_color, linecolor
 ):
-    """Function to plot RDD curves with confidence intervals. Function splits dataset into treated and
-    untreated group based on running variable and plots outcome (group below cutoff is treated, group above
-    cutoff is untreated).
+    """Plot RDD curves with confidence intervals.
+    
+    Function splits dataset into treated and untreated group based on running variable
+    and plots outcome (group below cutoff is treated, group above cutoff is untreated).
 
     Args:
     ------
@@ -108,7 +108,7 @@ def plot_RDD_curve_CI(
 
 def plot_hist_GPA(data):
     """
-    Plots historgram showing the distribution of stuents according to distance
+    Plot historgram showing the distribution of students according to distance
     from fist year cutoff.
     """
     plt.pyplot.xlim(-1.8, 3)
@@ -193,17 +193,21 @@ def plot_figure2(data, pred):
 
 
 def plot_figure3(inputs_dict, outputs_dict, keys):
-    """Plot results from RD anlaysis for the six subgroups of students in the paper for Figure3.
+    """Plot results from RD analysis for six subgroups of students in Figure3.
 
     Args:
     -------
-        inputs_dict(dict): Dictionary containing all dataframes for each subgroup, used for plotting the bins (dots).
-        outputs_dict(dict): Dictionary containing the results from RD analysis for each subgroup, used for plotting the lines.
-        keys(list): List of keys of the dictionaries, both dictionaries must have the same keys.
+        inputs_dict(dict): Dictionary containing all dataframes for each subgroup, used
+        for plotting the bins (dots).
+        outputs_dict(dict): Dictionary containing the results from RD analysis for each
+        subgroup, used for plotting the lines.
+        keys(list): List of keys of the dictionaries, both dictionaries must have the
+        same keys.
 
     Returns:
     ----------
-        matplotlib.pyplpt.plot: Figure 3 from the paper (figure consists of 6 subplots, one for each subgroup of students)
+        matplotlib.pyplpt.plot: Figure 3 from the paper (figure consists of 6 subplots,
+        one for each subgroup of students)
     """
     # Frame for entire figure.
     plt.pyplot.figure(figsize=(10, 13), dpi=70, facecolor="w", edgecolor="k")

@@ -1,13 +1,7 @@
-"""This module contains auxiliary functions for the creation of tables in the main notebook."""
-import json
+"""Auxiliary functions for the creation of tables in the main notebook."""
 
-import matplotlib as plt
-import numpy as np
 import pandas as pd
 import statsmodels as sm
-from auxiliary.example_project_auxiliary_plots import *
-from auxiliary.example_project_auxiliary_predictions import *
-from auxiliary.example_project_auxiliary_tables import *
 
 
 def color_pvalues(value):
@@ -28,19 +22,20 @@ def color_pvalues(value):
 
 
 def estimate_RDD_multiple_outcomes(data, outcomes, regressors):
-    """Regression analysis with standard errors clustered on GPA, on probation cutoff for multiple
-    outcomes contained in ONE dataframe.
+    """Regression analysis with standard errors clustered on GPA, on probation cutoff for
+    multiple outcomes contained in ONE dataframe.
 
     Args:
     ------
-    data(pd.DataFrame): Dataset containing all data (must contain 'clustervar', 'gpalscutoff', & 'const')
+    data(pd.DataFrame): Dataset containing all data (must contain 'clustervar',
+    'gpalscutoff', & 'const')
     outcomes(list): List of all outcomes (must correspond to column names in dataset)
     regressors(list): List of all regressors (must correspond to column names in dataset)
 
     Returns:
     ---------
-    table(pd.DataFrame): Dataframe containing the coefficient, pvalue and standard error for the dummy
-                        'GPA below cutoff' and the constant.
+    table(pd.DataFrame): Dataframe containing the coefficient, pvalue and standard error
+    for the dummy 'GPA below cutoff' and the constant.
     """
     table = pd.DataFrame(
         {
@@ -80,18 +75,20 @@ def estimate_RDD_multiple_outcomes(data, outcomes, regressors):
 
 
 def estimate_RDD_multiple_datasets(dictionary, keys, outcome, regressors):
-    """Regression analysis for ONE outcome with standard errors on GPA and with dictionary of MANY dataframes as input.
+    """Regression analysis for ONE outcome with standard errors on GPA and with dictionary
+    of MANY dataframes as input.
 
     Args:
     ------
-    dictionary(pd.dict): Dictionary containing datasets ( datasets must contain 'clustervar', 'gpalscutoff', & 'const')
-    outcome(string): Name of outcome variable (must correspond to column name in datasets )
+    dictionary(pd.dict): Dictionary containing datasets ( datasets must contain
+    'clustervar', 'gpalscutoff', & 'const')
+    outcome(string): Name of outcome variable (must correspond to column name in datasets)
     regressors(list): List of all regressors(must correspond to column names in datasets)
 
     Returns:
     ----------
-    table(pd.DataFrame): Dataframe containing the coefficient, pvalue and standard error for the dummy
-                          'GPA below cutoff' and the constant.
+    table(pd.DataFrame): Dataframe containing the coefficient, pvalue and standard error
+    for the dummy 'GPA below cutoff' and the constant.
     """
     table = pd.DataFrame(
         {

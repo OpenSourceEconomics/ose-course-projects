@@ -1,13 +1,9 @@
 """This module contains auxiliary functions for RD predictions used in the main notebook."""
-import json
 
-import matplotlib as plt
 import numpy as np
 import pandas as pd
 import statsmodels as sm
-from auxiliary.example_project_auxiliary_plots import *
-from auxiliary.example_project_auxiliary_predictions import *
-from auxiliary.example_project_auxiliary_tables import *
+from auxiliary.example_project_auxiliary_tables import estimate_RDD_multiple_datasets
 
 
 def prepare_data(data):
@@ -29,7 +25,7 @@ def prepare_data(data):
 
     # Remove zeros from total credits for people whose next GPA is missing
     data["total_credits_year2"] = data["totcredits_year2"]
-    data.loc[np.isnan(data.nextGPA) == True, "total_credits_year2"] = np.NaN
+    data.loc[np.isnan(data.nextGPA), "total_credits_year2"] = np.NaN
     # Add variable for campus specific cutoff
     data["cutoff"] = 1.5
     data.loc[data.loc_campus3 == 1, "cutoff"] = 1.6
@@ -48,7 +44,8 @@ def calculate_bin_frequency(data, bins):
 
     Returns:
     ---------
-        bin_frequency(pd.DataFrame): Dataframe that contains the frequency of each bin in data and and a constant.
+        bin_frequency(pd.DataFrame): Dataframe that contains the frequency of each bin in
+        data and and a constant.
     """
     bin_frequency = pd.DataFrame(data[bins].value_counts())
     bin_frequency.reset_index(level=0, inplace=True)
@@ -61,13 +58,16 @@ def calculate_bin_frequency(data, bins):
 
 def create_groups_dict(data, keys, columns):
     """
-    Function creates a dictionary containing different subsets of a dataset. Subsets are created using dummies.
+    Create a dictionary containing different subsets of a dataset.
+    
+    Subsets are created using dummies.
 
     Args:
     ------
         data(pd.DataFrame): Dataset that should be split into subsets.
         keys(list): List of keys that should be used in the dataframe.
-        columns(list): List of dummy variables in dataset that are used for creating subsets.
+        columns(list): List of dummy variables in dataset that are used for creating
+        subsets.
 
     Returns:
     ---------
@@ -311,7 +311,7 @@ def bandwidth_sensitivity_summary(
         summary.loc[(val, "p-value"), :] = table["P-Value (1)"]
 
         for i in summary.columns:
-            if (summary.loc[(val, "p-value"), i] < 0.1) == False:
+            if not (summary.loc[(val, "p-value"), i] < 0.1):
                 summary.loc[(val, "p-value"), i] = "."
                 summary.loc[(val, "probation"), i] = "x"
 
@@ -319,20 +319,23 @@ def bandwidth_sensitivity_summary(
 
 
 def trim_data(groups_dict, trim_perc, case1, case2):
-    """Creates trimmed data for upper and lower bound analysis by trimming the top and bottom percent of
-    students from control or treatment group. This can be used for the upper bound and lower bound.
+    """Create trimmed data for upper and lower bound analysis.
+    
+    Trim the top and bottom percent of students from control or treatment group.
+    This can be used for the upper bound and lower bound.
+    
     * For lower bound use `case1 = True` and `case2 = False`
     * For upper bound use `case1 = False` and `case2 = True`.
 
     Args:
     --------
         groups_dict(dictionary): Dictionary that holds all datasets that should be trimmed.
-        trim_perc(pd.Series/pd.DataFrame): Series oder dataframe that for each dataset in groups dict specifies
-                                           how much should be trimmed.
-        case1(True or False): Specifies whether lower or upper bound should be trimmed in the case where the the trimamount
-                              is positive and the control group is trimmed.
-        case2(True or False): Specifies whether lower or upper bound should be trimmed in the case where the the trimamount
-                              is negative and the treatment group is trimmed.
+        trim_perc(pd.Series/pd.DataFrame): Series oder dataframe that for each dataset in
+        groups dict specifies how much should be trimmed.
+        case1(True or False): Specifies whether lower or upper bound should be trimmed in
+        the case where the the trimamount is positive and the control group is trimmed.
+        case2(True or False): Specifies whether lower or upper bound should be trimmed in
+        the case where the the trimamount is negative and the treatment group is trimmed.
 
     Returns:
     ---------
@@ -355,7 +358,7 @@ def trim_data(groups_dict, trim_perc, case1, case2):
             trimmed_students = control.iloc[0:n]
             trimmed_students_ids = list(trimmed_students.identifier)
             trimmed_control = control[
-                control.identifier.isin(trimmed_students_ids) == False
+                ~control.identifier.isin(trimmed_students_ids)
             ]
             df = pd.concat([trimmed_control, treat], axis=0)
 
@@ -367,7 +370,7 @@ def trim_data(groups_dict, trim_perc, case1, case2):
             treat.sort_values("nextGPA", inplace=True, ascending=case2)
             trimmed_students = treat.iloc[0:n]
             trimmed_students_ids = list(trimmed_students.identifier)
-            trimmed_treat = treat[treat.identifier.isin(trimmed_students_ids) == False]
+            trimmed_treat = treat[~treat.identifier.isin(trimmed_students_ids)]
             df = pd.concat([trimmed_treat, control], axis=0)
 
         trimmed_dict[key] = df
