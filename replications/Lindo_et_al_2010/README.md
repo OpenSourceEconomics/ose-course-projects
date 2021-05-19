@@ -1,6 +1,6 @@
 ## Project Example
 
-The notebook [example_project.ipynb](https://github.com/OpenSourceEconomics/ose-template-course-project/blob/master/example_project.ipynb) contains an example project by [Annica Gehlen](https://github.com/amageh) from the 2019 iteration of the [OSE data science](https://github.com/OpenSourceEconomics/ose-course-data-science) class at Bonn University. It replicates the results from the following paper:
+The notebook project.ipynb contains an example project by [Annica Gehlen](https://github.com/amageh) from the 2019 iteration of the [OSE data science](https://github.com/OpenSourceEconomics/ose-course-data-science) class at Bonn University. It replicates the results from the following paper:
 
 * Lindo, J. M., Sanders, N. J., & Oreopoulos, P. (2010). [Ability, Gender, and Performance Standards: Evidence from Academic Probation](https://www.aeaweb.org/articles?id=10.1257/app.2.2.95). *American Economic Journal: Applied Economics*, 2(2), 95-117.
 

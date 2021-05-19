@@ -29,7 +29,7 @@ Project by `Pascal Heid <https://github.com/Pascalheid>`_
 .. toctree::
    :maxdepth: 1
 
-   Angrist_Krueger_1990/Angrist_1990.ipynb
+   Angrist_1990/Angrist_1990.ipynb
 
 ========================
 Angrist & Krueger (1991)
@@ -44,3 +44,18 @@ Project by `Felix Kirsch <https://github.com/felix0496>`_
    :maxdepth: 1
 
    Angrist_Krueger_1991/Replication
+
+
+========================
+Lindo et al. (2010)
+========================
+
+
+Project by `Annica Gehlen <https://github.com/amageh>`_
+
+Lindo et al. (2010) examine the effects of academic probation on student outcomes using a regression discontinuity design. The analysis is based on data from a large Canadian university and evaluates whether academic probation is successful in improving the performance of low scoring students. Consistent with a model of performance standards, the authors find that being placed on probation in the first year of university induces some students to drop out of school while it improves the grades of students who continue their studies. In a more general sense, academic probation can offer insights into how agents respond to negative incentives and the threat of punishment in a real-world context.
+
+.. toctree::
+   :maxdepth: 1
+
+   Lindo_et_al_2010/project

@@ -1,6 +1,0 @@
-name: student_project_template
-
-dependencies:
-- numpy
-- pandas
-- scipy 

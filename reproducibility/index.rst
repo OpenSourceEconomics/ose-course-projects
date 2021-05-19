@@ -10,12 +10,12 @@ In some cases you might not be able to run parts of your code on `GitHub Actions
 .. code-block:: python
 
   # If we are running on GitHub Actions CI we will simply load a file with existing results.
-  
+
   if os.environ.get("CI") == "true":
-    rslt = pkl.load(open('stored_results.pkl', 'br'))
+      rslt = pkl.load(open("stored_results.pkl", "br"))
   else:
-    rslt = compute_results()
-    
+      rslt = compute_results()
+
   # Now we are ready for further processing.
 
 However, if you decide to do so, please be sure to provide an explanation in your notebook explaining why exactly this is required in your case.
