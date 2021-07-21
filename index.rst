@@ -40,22 +40,14 @@ Our two courses `OSE data science <https://ose-data-science.readthedocs.io>`_ an
 Powered by
 ----------
 
-|OSE| |space| |Nuvolos| |space| |TRA| |space| |GRN|
+|OSE| |space| |GRN|
 
 .. |OSE| image:: https://raw.githubusercontent.com/OpenSourceEconomics/ose-corporate-design/master/logos/OSE_logo_RGB.svg
   :width: 22 %
   :target: https://open-econ.org
-
-.. |Nuvolos| image:: images/fig-novolos.svg
-  :width: 10 %
-  :target: https://nuvolos.cloud
-
-.. |TRA| image:: images/fig-tra.png
-  :width: 10 %
-  :target: https://www.uni-bonn.de/research/research-profile/mathematics-modelling-and-simulation-of-complex-systems-1
   
 .. |GRN| image:: images/RN_German.png
-  :width: 10 %
+  :width: 20 %
   :target: https://reproducibilitynetwork.de/
 
 .. |space| raw:: html
