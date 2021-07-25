@@ -40,7 +40,7 @@ Our two courses `OSE data science <https://ose-data-science.readthedocs.io>`_ an
 Powered by
 ----------
 
-|OSE| |space| |GRN|
+|space| |space| |OSE| |space| |GRN|
 
 .. |OSE| image:: https://raw.githubusercontent.com/OpenSourceEconomics/ose-corporate-design/master/logos/OSE_logo_RGB.svg
   :width: 22 %
