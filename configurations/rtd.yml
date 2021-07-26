@@ -6,6 +6,7 @@ channels:
 
 dependencies:
 - sphinx>=1.4
+- pandoc
 - jupyterlab
 - jupyter
 - jupyter_contrib_nbextensions
