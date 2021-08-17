@@ -19,7 +19,6 @@ The main focus of this project is to compare different methods and to discuss th
 Overall, the project enables the student to learn about the use cases of data analysis in a corporate environment and get hands-on experience in professional data science. Through supervising meetings with Daimler AG the student has additionally the chance to get feedback and insights from professional data scientists and learn about their work.
 
 
-
 Deutsche Bank AG
 ----------
 
@@ -35,8 +34,8 @@ The project’s scope is to develop an AI-related model that can determine the p
  
 **Why should I be interested?**
  
-First, it is important to understand how AI comes to certain results. As AI becomes more advanced, humans are challenged to understand their decisions. Explainability can help developers ensure that the system is working as expected, it might be necessary to meet regulatory standards, or it might be important in allowing those affected by a decision to challenge or change that outcome. This explainability is also relevant concerning social issues. For example, there is a well-known scandal in the field of crime risk assessment, in which the COMPAS software was used across the US to predict future criminals. As it appears from this <a href="https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing/">article</a>, the software that uses ML is biased against blacks. This could possibly be prevented by increasing the transparency of the so-called black box. 
- 
+First, it is important to understand how AI comes to certain results. As AI becomes more advanced, humans are challenged to understand their decisions. Explainability can help developers ensure that the system is working as expected, it might be necessary to meet regulatory standards, or it might be important in allowing those affected by a decision to challenge or change that outcome. This explainability is also relevant concerning social issues. For example, there is a well-known scandal in the field of crime risk assessment, in which the COMPAS software was used across the US to predict future criminals. It appears that the software that uses ML is biased against blacks. This could possibly be prevented by increasing the transparency of the so-called black box. 
+  
 Second, it is worthwhile to investigate how classifications with imbalanced datasets can be improved, as imbalanced data can be found in many real-world applications, e.g. cancer detection. And, as mentioned in the paper "Survey on deep learning with class imbalance" written by Johnson and Khoshgoftaar (2019), very little empirical work in the area of deep learning with class imbalance exists although there were recent advances in deep learning, along with its increasing popularity. 
 
 Finally, the project enables students to learn about uncertainty and risk quantification using ML methods and the application of highly professional data science in the banking sector. Banks are subject to many guidelines and have to justify lending decisions, so developing such a model coupled with the issue of explainability is particularly innovative and futuristic for the banking sector. From the perspective that ML methods are still rarely used in the banking world, but are commonplace in the Silicon Valley world, this project allows the student to contribute to a potential migration of futuristic methods in the banking world. 
