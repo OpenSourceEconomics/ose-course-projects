@@ -21,5 +21,3 @@ The project’s scope is to develop AI-related models that can determine the reg
 
 In general, the project would expose the student to research on how to improve classifications with imbalanced datasets, as this type of data can be found in many real-world applications.  Finally, developing an AI-related model facing the issue of explainability is particularly innovative for the banking sector and this allows the student to contribute in a project that aims to apply cutting edge statistical methods. 
 
-Overall, the project enables the student to learn about the use cases of data analysis in a corporate environment and get hands-on experience in professional data science. Through supervising meetings with Daimler AG the student has additionally the chance to get feedback and insights from professional data scientists and learn about their work.
-
