@@ -2,6 +2,8 @@
 Projects
 ########
 
+*Include general summary of projects and grading here.*
+
 ====================
 Replication Projects
 ====================
