@@ -30,10 +30,9 @@ Our two courses `OSE data science <https://ose-data-science.readthedocs.io>`_ an
 .. toctree::
    :maxdepth: 1
 
+   projects/index
    repository-template/index
    reproducibility/index
-   replications/index
-   collaborations/index
    frequently-asked-questions/index
 
 
