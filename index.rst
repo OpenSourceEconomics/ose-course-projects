@@ -25,7 +25,7 @@
     :target: https://ose-course-projects.readthedocs.io
 
 
-Our two courses `OSE data science <https://ose-data-science.readthedocs.io>`_ and `OSE scientific computing <https://ose-data-science.readthedocs.io>`_ both requires students to work on their projects independently. This documentation includes some basic instructions and example projects.
+Our two courses `OSE data science <https://ose-data-science.readthedocs.io>`_ and `OSE scientific computing <https://ose-data-science.readthedocs.io>`_ require students to work on independent projects. This documentation includes some basic instructions and example projects.
 
 .. toctree::
    :maxdepth: 1
