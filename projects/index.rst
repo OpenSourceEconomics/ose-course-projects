@@ -24,6 +24,7 @@ There might be good reason to deviate from this structure. If so, please simply 
 
 Here are some examples of replication projects from earlier iterations of the `OSE data science course <https://ose-data-science.readthedocs.io/en/latest/index.html>`_.
 
+--------------
 Angrist (1990)
 --------------
 
@@ -36,6 +37,7 @@ Project by `Pascal Heid <https://github.com/Pascalheid>`_
 
    Angrist_1990/Angrist_1990.ipynb
 
+------------------------
 Angrist & Krueger (1991)
 ------------------------
 
@@ -49,7 +51,7 @@ Project by `Felix Kirsch <https://github.com/felix0496>`_
 
    Angrist_Krueger_1991/Replication
 
-
+-------------------
 Lindo et al. (2010)
 -------------------
 
@@ -68,6 +70,7 @@ Collaboration Projects
 
 We set up collaboration projects with our partners from the private sector. These allow students to directly put the skills acquired during class into action, gain hands-on experience in a professional data science setting, and receive feedback and mentoring from seasoned data scientists. We announce collaboration projects in class and also discuss there how to apply.
 
+----------
 Daimler AG
 ----------
 
@@ -77,6 +80,7 @@ The main focus of the project is to compare different methods and to discuss the
 
 Overall, the project enables the student to learn about the use cases of data analysis in a corporate environment and get hands-on experience in professional data science. Through supervising meetings with Daimler AG the student has additionally the chance to get feedback and insights from professional data scientists and learn about their work.
 
+--------------
 Deutsche Bank
 --------------
 
