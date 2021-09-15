@@ -5,12 +5,12 @@ FAQs
 Do we need to report on the progress of our project?
 =====================================================
 
-Yes, I will frequently select a student project at random to report on their current state at the end of a lecture.
+Yes. At the end of a lecture, I will frequently select a student at random to report on the current state of their project.
 
 Why are the projects public?
 ============================
 
-Transparency and reproducibility is a core value in research. Also, we want to learn from each other.
+Transparency and reproducibility are core values in research. Also, we want to learn from each other.
 
 How can I initialize the repository for my student project?
 ===========================================================
@@ -30,9 +30,9 @@ Yes, everybody who successfully sets up a continuous integration workflow will g
 Where can I look for publications that provide the data behind their research?
 ==============================================================================
 
-Some journals provide the data for their published articles as data supplements directly on their website. In addition, the `Replication Wiki <http://replication.uni-goettingen.de/wiki/index.php/Main_Page>`_  and the `Harvard Dataverse <https://dataverse.harvard.edu>`_ compile a lot such information.
+Some journals provide the data for their published articles as data supplements directly on their website. In addition, the `Replication Wiki <http://replication.uni-goettingen.de/wiki/index.php/Main_Page>`_  and the `Harvard Dataverse <https://dataverse.harvard.edu>`_ compile a lot of such information.
 
 What are other useful resources for research data?
 ==================================================
 
-There is a tremendous amount of data available online. For example, MDRC provides a host of data files for public use `here <https://www.mdrc.org/available-public-use-files>`_ from the evaluation of public policy initiatives. More generally, `Google Dataset Search <https://datasetsearch.research.google.com>`_ allows to look for all kinds of online data.
+There is a tremendous amount of data available online. For example, MDRC provides a host of data files for public use `here <https://www.mdrc.org/available-public-use-files>`_ from the evaluation of public policy initiatives. More generally, `Google Dataset Search <https://datasetsearch.research.google.com>`_ allows you to look for all kinds of online data.
