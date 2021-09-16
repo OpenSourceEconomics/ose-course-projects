@@ -9,6 +9,12 @@ You are free to select a topic of your choice related to the contents of the res
 **Note for students taking EPP:**
 Participants of the course "Effective Programming Practices for Economists" by Professor Hans-Martin von Gaudecker are welcome to submit their project for grading in `OSE data science <https://ose-data-science.readthedocs.io>`_ or `OSE scientific computing <https://ose-data-science.readthedocs.io>`_. Note that the project still has to fulfill the topic and submission requirements listed above in addition to any requirements stated by the EPP course. Please reach out in the course Zulip chat for any questions about the project. 
 
+===================
+Kaggle Competitions
+===================
+
+*investigate tuning paramter, identify the numerical components in the algorithm, swap-in-swap out components underlying assumptions for prediction / causal model to work*
+
 ====================
 Replication Projects
 ====================
@@ -94,5 +100,3 @@ The Deutsche Bank project uses different modern Machine Learning (ML) methods to
 The project’s scope is to develop AI-related models that can determine the regret-probability of credits and assign it to certain characteristics. Programming-heavy and model-oriented, it emphasizes the reproducibility of results, as the AI will be used internally in the long term. One challenge is to shed light on the so-called black-box, where even the AI developers do not know why their AIs make certain decisions. In light of the project's scope, this means to better understand why the AI assigns a certain probability of being conspicuous to a specific credit. Another challenge is to design the model such that it provides precise results although the data set is imbalanced, that is, it contains many more non-regret credits than regret credits.  
 
 In general, the project exposes the student to research on how to improve classifications with imbalanced datasets, as this type of data can be found in many real-world applications. Finally, developing an AI-related model facing the issue of explainability is particularly innovative for the banking sector and thus allows the student to contribute in a project that aims to apply cutting edge statistical methods. 
-
-
