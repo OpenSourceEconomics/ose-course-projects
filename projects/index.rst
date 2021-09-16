@@ -111,7 +111,7 @@ Project by `Manuel Huth <https://github.com/manuhuth>`_
 
 
 --------------
-grumpy package 
+grmpy package 
 --------------
 
 grmpy is an open source package for the programming language python that enables researchers to simulate datasets and estimate parameters using already existing data within the structure of the generalized Roy model. Currently the package serves as a teaching tool for a course on the econometrics of policy evaluation at the University of Bonn. Moreover, it is thought of as a promotion for the conceptual framework as well as a showcase for basic software engineering practices.
