@@ -9,11 +9,13 @@ You are free to select a topic of your choice related to the contents of the res
 **Note for students taking EPP:**
 Participants of the course "Effective Programming Practices for Economists" by Professor Hans-Martin von Gaudecker are welcome to submit their project for grading in `OSE data science <https://ose-data-science.readthedocs.io>`_ or `OSE scientific computing <https://ose-data-science.readthedocs.io>`_. Note that the project still has to fulfill the topic and submission requirements listed above in addition to any requirements stated by the EPP course. Please reach out in the course Zulip chat for any questions about the project. 
 
+Make sure you subscribe to the `OSE course project stream <https://bonn-econ-teaching.zulipchat.com/#narrow/stream/300796-OSE-Course.20Projects>`_ in the bonn-econ-teaching `Zulip <https://zulip.com/>`_ chat, where you can post any questions you may have regarding your course project.
+
 ===================
 Kaggle Competitions
 ===================
 
-*investigate tuning paramter, identify the numerical components in the algorithm, swap-in-swap out components underlying assumptions for prediction / causal model to work*
+*investigate tuning parameter, identify the numerical components in the algorithm, swap-in-swap out components underlying assumptions for prediction / causal model to work*
 
 ====================
 Replication Projects
