@@ -50,20 +50,6 @@ Project by `Pascal Heid <https://github.com/Pascalheid>`_
 
    Angrist_1990/Angrist_1990.ipynb
 
-------------------------
-Angrist & Krueger (1991)
-------------------------
-
-This paper presents evidence showing that individuals' season of birth is related to their educational attainment because of the combined effects of school start age policy and compulsory school attendance laws. In most school districts, individuals born in the beginning of the year start school at a slightly older age, and therefore are eligible to drop out of school after completing fewer years of schooling than individuals born near the end of the year. Our estimates suggest that as many as 25 percent of potential dropouts remain in school because of compulsory schooling laws. We estimate the impact of compulsory schooling on earnings by using quarter of birth as an instrumental variable for education in an earnings equation. This provides a valid identification strategy because date of birth is unlikely to be correlated with omitted earnings determinants. The instrumental variables estimate of the rate of return to education is remarkably close to the ordinary least squares estimate, suggesting that there is little ability bias in conventional estimates of the return to education. The results also imply that individuals who are compelled to attend school longer than they desire by compulsory schooling laws reap a substantial return for their extra schooling.
-
-Project by `Felix Kirsch <https://github.com/felix0496>`_
-
-
-.. toctree::
-   :maxdepth: 1
-
-   Angrist_Krueger_1991/Replication
-
 -------------------
 Lindo et al. (2010)
 -------------------
@@ -102,3 +88,39 @@ The Deutsche Bank project uses different modern Machine Learning (ML) methods to
 The project’s scope is to develop AI-related models that can determine the regret-probability of credits and assign it to certain characteristics. Programming-heavy and model-oriented, it emphasizes the reproducibility of results, as the AI will be used internally in the long term. One challenge is to shed light on the so-called black-box, where even the AI developers do not know why their AIs make certain decisions. In light of the project's scope, this means to better understand why the AI assigns a certain probability of being conspicuous to a specific credit. Another challenge is to design the model such that it provides precise results although the data set is imbalanced, that is, it contains many more non-regret credits than regret credits.  
 
 In general, the project exposes the student to research on how to improve classifications with imbalanced datasets, as this type of data can be found in many real-world applications. Finally, developing an AI-related model facing the issue of explainability is particularly innovative for the banking sector and thus allows the student to contribute in a project that aims to apply cutting edge statistical methods. 
+
+===================
+Other Project Ideas
+===================
+
+You can also browse the examples below to gather ideas for alternative project concepts that are suitable for the `OSE scientific computing course <https://ose-scientific-computing.readthedocs.io>`_.
+
+----------------
+respyabc package 
+----------------
+
+
+
+Project by `Manuel Huth <https://github.com/manuhuth>`_
+
+
+.. toctree::
+   :maxdepth: 1
+
+   Angrist_Krueger_1991/Replication
+
+
+--------------
+grumpy package 
+--------------
+
+grmpy is an open source package for the programming language python that enables researchers to simulate datasets and estimate parameters using already existing data within the structure of the generalized Roy model. Currently the package serves as a teaching tool for a course on the econometrics of policy evaluation at the University of Bonn. Moreover, it is thought of as a promotion for the conceptual framework as well as a showcase for basic software engineering practices.
+
+Project by `Sebastian Becker <https://github.com/SeBecker>`_. 
+
+While a tutorial of the *grmpy* package is available below, it is possible to view the full project in the `grmpy Github repository <https://github.com/OpenSourceEconomics/grmpy>`_. 
+
+.. toctree::
+   :maxdepth: 1
+
+   grmpy/grmpy_tutorial_notebook
