@@ -1,6 +1,4 @@
-"""This module contains auxiliary function which are used in the grmpy application
-notebook.
-"""
+"""Auxiliary functions which are used in the grmpy application notebook."""
 import json
 import linecache
 import shlex
@@ -22,8 +20,7 @@ from pylab import rcParams
 
 
 def process_data(df, output_file):
-    """This function adds squared and interaction terms to the Cainero data set."""
-
+    """Add squared and interaction terms to the Cainero data set."""
     # Delete redundant columns\n",
     for key_ in ["newid", "caseid"]:
         del df[key_]
@@ -42,10 +39,7 @@ def process_data(df, output_file):
 
 
 def effects(data):
-    """This function plots the distribution of benefits and the related conventional
-    effects.
-    """
-
+    """Plot the distribution of benefits and the related conventional effects."""
     rcParams["figure.figsize"] = 15, 10
 
     benefit = data["Y1"] - data["Y0"]
@@ -78,9 +72,11 @@ def effects(data):
 
 
 def update_tutorial(file, rho=None):
-    """This function enables us to rewrite the grmpy tutorial file so that it correspond
-    to a parameterization with essential heterogeneity"""
+    """Rewrite the grmpy tutorial file.
 
+    This function enables us to rewrite the grmpy tutorial file so that it correspond
+    to a parameterization with essential heterogeneity.
+    """
     if rho is None:
         rho = []
         rho += [np.random.uniform(0.3, 0.7, 1)]
@@ -102,7 +98,9 @@ def update_tutorial(file, rho=None):
 
 
 def create_data(file):
-    """This function creates the a data set based for the monte carlo simulation
+    """Create data set.
+
+    This function creates the a data set based for the monte carlo simulation
     setup.
     """
     # Read in initialization file and the data set
@@ -141,9 +139,11 @@ def create_data(file):
 
 
 def update_correlation_structure(model_dict, rho):
-    """This function takes a valid model specification and updates the correlation
-    structure among the unobservables."""
+    """Update correlation structure among unobservables.
 
+    This function takes a valid model specification and updates the correlation
+    structure among the unobservables.
+    """
     # We first extract the baseline information from the model dictionary.
     sd_v = model_dict["DIST"]["params"][-1]
     sd_u1 = model_dict["DIST"]["params"][0]
@@ -160,7 +160,10 @@ def update_correlation_structure(model_dict, rho):
 
 
 def get_effect_grmpy(file):
-    """This function simply returns the ATE of the data set."""
+    """Return ATE of data set.
+
+    This function simply returns the ATE of the data set.
+    """
     dict_ = read(file)
     df = pd.read_pickle(dict_["SIMULATION"]["source"] + ".grmpy.pkl")
     beta_diff = dict_["TREATED"]["params"] - dict_["UNTREATED"]["params"]
@@ -171,11 +174,12 @@ def get_effect_grmpy(file):
 
 
 def monte_carlo(file, grid_points):
-    """This function estimates the ATE for a sample with different correlation
+    """Estimate ATE.
+
+    This function estimates the ATE for a sample with different correlation
     structures between U1 and V. Two different strategies for (OLS,LATE) are
     implemented.
     """
-
     ATE = 0.5
 
     # Define a dictionary with a key for each estimation strategy
@@ -244,9 +248,11 @@ def monte_carlo(file, grid_points):
 
 
 def create_plots(effects, true):
-    """The function creates the figures that illustrates the behavior of each estimator
-    of the ATE when the correlation structure changes from 0 to 1."""
+    """Create figures.
 
+    The function creates the figures that illustrates the behavior of each estimator
+    of the ATE when the correlation structure changes from 0 to 1.
+    """
     grid = np.linspace(0.00, 0.99, len(effects["ols"]))
 
     # Plot all graphs in one plot
@@ -290,9 +296,11 @@ def create_plots(effects, true):
 
 
 def plot_est_mte(rslt, file):
-    """This function calculates the marginal treatment effect for different quartiles
-    of the unobservable V. ased on the calculation results."""
+    """Calculate the marginal treatment effect.
 
+    This function calculates the marginal treatment effect for different quartiles
+    of the unobservable V. ased on the calculation results.
+    """
     init_dict = read(file)
     data_frame = pd.read_pickle(init_dict["ESTIMATION"]["file"])
 
@@ -331,7 +339,10 @@ def plot_est_mte(rslt, file):
 
 
 def plot_joint_distribution_unobservables(df, df_eh):
-    """This function plots the joint distribution of the relevant unobservables."""
+    """Plot joint distribution.
+
+    This function plots the joint distribution of the relevant unobservables.
+    """
     g1 = sns.jointplot(df["V"], df["U1"]).set_axis_labels("$V$", "$U_1$", fontsize=15)
     g1.fig.subplots_adjust(top=0.9)
     g1.fig.suptitle("Abscence of essential heterogeneity", fontsize=18)
@@ -344,8 +355,10 @@ def plot_joint_distribution_unobservables(df, df_eh):
 
 
 def plot_marginal_effects(file1, file2):
-    """This function plots the marginal effect of treatment given the output files of a
-    grmpy simulation process.
+    """Plot marginal effect of treatment.
+
+    This function plots the marginal effect of treatment given the output files of
+    a grmpy simulation process.
     """
     ax = plt.figure().add_subplot(111)
 
@@ -374,5 +387,5 @@ def plot_marginal_effects(file1, file2):
 
 
 def plot_joint_distribution_potential(df):
-    """This function plots the joint distribution of potential outcomes."""
+    """Plot the joint distribution of potential outcomes."""
     sns.jointplot(df["Y1"], df["Y0"]).set_axis_labels("$Y_1$", r"$Y_0$", fontsize=15)
