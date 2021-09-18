@@ -79,6 +79,16 @@ The main focus of the project is to compare different methods and to discuss the
 
 Overall, the project enables the student to learn about the use cases of data analysis in a corporate environment and get hands-on experience in a professional data science setting. Through supervisory meetings with Daimler AG the student additionally has the chance to get feedback and insights from professional data scientists and learn about their work.
 
+A collaboration project with Daimler AG from the `OSE data science course <https://ose-data-science.readthedocs.io/en/latest/index.html>`_ held during the 2021 summer semester is available here:   
+
+Project by `Jakob Juergens <https://github.com/JakobJuergens>`_
+
+.. toctree::
+   :maxdepth: 1
+
+   daimler_project/Project_Main
+
+
 --------------
 Deutsche Bank
 --------------
