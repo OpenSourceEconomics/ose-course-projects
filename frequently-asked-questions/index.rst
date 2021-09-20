@@ -20,7 +20,7 @@ Please just follow this invitation `link <https://classroom.github.com/classroom
 Can we work in groups?
 ======================
 
-No, everybody has to work on their own project.
+Yes, going forward from the iteration of the course for the summer term 2022, students are allowed to work in groups of two.
 
 Do I get any extra credit for ensuring full reproducibility of my project using GitHub Actions?
 ===============================================================================================
