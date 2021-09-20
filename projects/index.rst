@@ -86,7 +86,7 @@ Project by `Jakob Juergens <https://github.com/JakobJuergens>`_
 .. toctree::
    :maxdepth: 1
 
-   daimler_project/Project_Main
+   daimler-project/Project-Main
 
 
 --------------
