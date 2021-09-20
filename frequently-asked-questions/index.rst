@@ -36,3 +36,8 @@ What are other useful resources for research data?
 ==================================================
 
 There is a tremendous amount of data available online. For example, MDRC provides a host of data files for public use `here <https://www.mdrc.org/available-public-use-files>`_ from the evaluation of public policy initiatives. More generally, `Google Dataset Search <https://datasetsearch.research.google.com>`_ allows to look for all kinds of online data.
+
+Do we get to present our projects at the end of the course?
+============================================================
+
+Yes, at the end of the lecture period we will host a "Demo Day", where selected projects will be presented to the whole class.
