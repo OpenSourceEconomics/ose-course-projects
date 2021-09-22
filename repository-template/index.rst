@@ -2,9 +2,9 @@
 Repository template
 ###################
 
-We provide a `repository template <https://github.com/OpenSourceEconomics/ose-template-course-project>`_ for your project. This is a template for course projects. We use `GitHub Classroom <https://classroom.github.com>`_  to administrate our student projects and so you need to sign up for a `GitHub Account <http://github.com>`_.
+We provide a `repository template <https://github.com/OpenSourceEconomics/ose-template-course-project>`_ for your course project. As we use `GitHub Classroom <https://classroom.github.com>`_  to administrate the student projects, you need to sign up for a `GitHub Account <http://github.com>`_.
 
-Please ensure that a brief description of your project is included in the `README.md <https://github.com/HumanCapitalAnalysis/template-course-project/blob/master/README.md>`_, which provides a proper citation of your baseline article. Also, please set up the following badges that allow to easily access your project notebook.
+Please ensure that a brief description of your project is included in the `README.md <https://github.com/HumanCapitalAnalysis/template-course-project/blob/master/README.md>`_, which provides a proper citation of your baseline article. Also, please set up the following badges that allow easy access your project notebook.
 
 |image1| 
 
