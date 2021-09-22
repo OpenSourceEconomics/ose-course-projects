@@ -20,7 +20,7 @@ Please just follow this invitation `link <https://classroom.github.com/classroom
 Can we work in groups?
 ======================
 
-No, everybody has to work on their own project.
+Yes, going forward from the iteration of the course for the summer term 2022, students are allowed to work in groups of two.
 
 Do I get any extra credit for ensuring full reproducibility of my project using GitHub Actions?
 ===============================================================================================
@@ -46,3 +46,8 @@ We collect data from several textbooks.
 * **Angrist, J. D., and Pischke, J. (2014)**. `Mastering 'metrics <http://masteringmetrics.com>`__. Princeton, NJ: *Princeton University Press*.
 
 * **Stock, J. H., and Watson, M. W. (2019)**.  `Introduction to econometrics <https://www.pearson.com/us/higher-education/program/Stock-Introduction-to-Econometrics-Plus-My-Lab-Economics-with-Pearson-e-Text-Access-Card-Package-4th-Edition/PGM2416966.html>`__. New York, NY: *Pearson*.
+
+Do we get to present our projects at the end of the course?
+============================================================
+
+Yes, at the end of the lecture period we will host a "Demo Day", where selected projects will be presented to the whole class.
