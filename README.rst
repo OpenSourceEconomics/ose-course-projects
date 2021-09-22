@@ -1,5 +1,5 @@
 .. |logo| image:: https://raw.githubusercontent.com/OpenSourceEconomics/ose-logos/main/OSE_logo_no_type_RGB.svg
-   :height: 25px
+   :height: 26px
 
 |logo| OSE course projects
 ==========================
