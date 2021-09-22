@@ -2,7 +2,7 @@
 Projects
 ########
 
-Grading for `OSE data science <https://ose-data-science.readthedocs.io>`_ and `OSE scientific computing <https://ose-data-science.readthedocs.io>`_ is based on a project due at the end of the semester, which should be presented in the form of a Jupyter Notebook. The projects need to be coded in Python. You can work on your project using the `Nuvolos.cloud <https://nuvolos.cloud>`_  and share it with Professor Eisenhauer for grading. Alternatively, you can submit the project in the form of a GitHub repository or pull request on an existing repository (depending on your project). Reproducibility is a cornerstone of sound computational work, so please ensure that we can run your project notebook from beginning to end without any error. Please discuss your project idea with Professor Eisenhauer.
+Grading for `OSE data science <https://ose-data-science.readthedocs.io>`_ and `OSE scientific computing <https://ose-data-science.readthedocs.io>`_ is based on a project due at the end of the semester, which should be presented in the form of a Jupyter Notebook. Although I encourage you to code your projects in Python, you may also use R or Julia. You can work on your project using the `Nuvolos.cloud <https://nuvolos.cloud>`_  and share it with Professor Eisenhauer for grading. Alternatively, you can submit the project in the form of a GitHub repository or pull request on an existing repository (depending on your project). Reproducibility is a cornerstone of sound computational work, so please ensure that we can run your project notebook from beginning to end without any error. Please discuss your project idea with Professor Eisenhauer.
 
 You are free to select a topic of your choice related to the contents of the respective  class. For example, you can either replicate the core results of a computational publication or apply for the chance to work on a collaboration project with one of our private sector partners. Other project ideas include running a benchmarking exercise for an algorithm, contributing to one of our group's software packages of your choice, or creating a notebook similar to the ones presented in the lectures on a computational topic that interests you. Note that several textbooks explore the implementation of involved computational economic models, porting their implementation to Python can serve as a valuable starting point for your project.
 
@@ -98,39 +98,3 @@ The Deutsche Bank project uses different modern Machine Learning (ML) methods to
 The project’s scope is to develop AI-related models that can determine the regret-probability of credits and assign it to certain characteristics. Programming-heavy and model-oriented, it emphasizes the reproducibility of results, as the AI will be used internally in the long term. One challenge is to shed light on the so-called black-box, where even the AI developers do not know why their AIs make certain decisions. In light of the project's scope, this means to better understand why the AI assigns a certain probability of being conspicuous to a specific credit. Another challenge is to design the model such that it provides precise results although the data set is imbalanced, that is, it contains many more non-regret credits than regret credits.  
 
 In general, the project exposes the student to research on how to improve classifications with imbalanced datasets, as this type of data can be found in many real-world applications. Finally, developing an AI-related model facing the issue of explainability is particularly innovative for the banking sector and thus allows the student to contribute in a project that aims to apply cutting edge statistical methods. 
-
-===================
-Other Project Ideas
-===================
-
-You can also browse the examples below to gather ideas for alternative project concepts that are suitable for the `OSE scientific computing course <https://ose-scientific-computing.readthedocs.io>`_.
-
-----------------
-respyabc package 
-----------------
-
-
-
-Project by `Manuel Huth <https://github.com/manuhuth>`_
-
-
-.. toctree::
-   :maxdepth: 1
-
-   Angrist_Krueger_1991/Replication
-
-
---------------
-grmpy package 
---------------
-
-grmpy is an open source package for the programming language python that enables researchers to simulate datasets and estimate parameters using already existing data within the structure of the generalized Roy model. Currently the package serves as a teaching tool for a course on the econometrics of policy evaluation at the University of Bonn. Moreover, it is thought of as a promotion for the conceptual framework as well as a showcase for basic software engineering practices.
-
-Project by `Sebastian Becker <https://github.com/SeBecker>`_. 
-
-While a tutorial of the *grmpy* package is available below, it is possible to view the full project in the `grmpy Github repository <https://github.com/OpenSourceEconomics/grmpy>`_. 
-
-.. toctree::
-   :maxdepth: 1
-
-   grmpy/grmpy_tutorial_notebook
