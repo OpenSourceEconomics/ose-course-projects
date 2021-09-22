@@ -1,0 +1,53 @@
+                              Optimization Results
+================================================================================
+Dep. Variable:                 wage     Optimizer:                          BFGS
+Choice Var:                   state     No. Evaluations:                       0
+Date:              Wed, 22 Sep 2021     Success:                               0
+Time:                      12:44:34     Status:                                2
+Observations:                 10000     Message:                             ---
+Start Values:                  auto                                             
+                                        Criterion Func:                         
+                                             Start:                         +inf
+                                             Finish:                        +inf
+================================================================================
+                        coef   std err         t     P>|t|     [0.025     0.975]
+--------------------------------------------------------------------------------
+TREATED       
+
+const                 0.9928       nan       nan       nan        nan        nan
+X2                    0.5585       nan       nan       nan        nan        nan
+X3                   -0.5556       nan       nan       nan        nan        nan
+X4                    0.7529       nan       nan       nan        nan        nan
+X5                    0.1588       nan       nan       nan        nan        nan
+
+UNTREATED     
+
+const                 0.5038       nan       nan       nan        nan        nan
+X2                    0.2554       nan       nan       nan        nan        nan
+X3                   -0.2518       nan       nan       nan        nan        nan
+X4                    0.1734       nan       nan       nan        nan        nan
+X5                    0.0916       nan       nan       nan        nan        nan
+
+CHOICE        
+
+const                 0.2964       nan       nan       nan        nan        nan
+X6                   -0.3894       nan       nan       nan        nan        nan
+X7                    0.5675       nan       nan       nan        nan        nan
+X8                   -0.8555       nan       nan       nan        nan        nan
+X9                   -0.7139       nan       nan       nan        nan        nan
+
+DIST          
+
+sigma1                0.2022       nan       nan       nan        nan        nan
+rho1                 -0.9995       nan       nan       nan        nan        nan
+sigma0                0.2015       nan       nan       nan        nan        nan
+rho0                 -0.6862       nan       nan       nan        nan        nan
+================================================================================
+
+Warning:
+
+---
+
+The estimation process was not able to provide standard errors for the
+estimation results, because the approximation of the hessian matrix leads to a
+singular Matrix.

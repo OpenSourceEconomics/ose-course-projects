@@ -2,16 +2,16 @@
 SIMULATION:
     seed: 5133
     agents: 10000
-    source: mc
+    source: data/mc
 ESTIMATION:
-    file: mc.grmpy.txt
+    file: data/mc.grmpy.txt
     start: auto
     agents: 165
     optimizer: BFGS
     maxiter: 6383
     dependent: wage
     indicator: state
-    output_file: mc_rslt.grmpy.info
+    output_file: output/mc_rslt.grmpy.info
     comparison: 0
     print_output: 0
 TREATED:

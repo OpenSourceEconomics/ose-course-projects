@@ -2,9 +2,9 @@
 SIMULATION:
     agents: 10000
     seed: 2356
-    source: data
+    source: data/data
 ESTIMATION:
-    file: data.grmpy.txt
+    file: data/data.grmpy.txt
     output_file: output/est.grmpy.info
     optimizer: BFGS
     start: auto

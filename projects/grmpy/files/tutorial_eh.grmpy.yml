@@ -2,9 +2,9 @@
 SIMULATION:
     seed: 2356
     agents: 10000
-    source: data_eh
+    source: data/data_eh
 ESTIMATION:
-    file: data_eh.grmpy.txt
+    file: data/data_eh.grmpy.txt
     start: auto
     agents: 165
     optimizer: BFGS
