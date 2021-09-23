@@ -1,0 +1,18 @@
+name: student_project
+
+dependencies:
+- numpy
+- pandas
+- jupyterlab
+- scipy
+- r-base
+- r-tidyverse
+- r-irkernel
+- r-largeList
+- r-mass
+- r-rcpp
+- r-shiny
+- r-shinydashboard
+- r-repr
+- pip
+- pip:
