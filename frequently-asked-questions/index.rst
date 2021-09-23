@@ -37,7 +37,7 @@ What are other useful resources for research data?
 
 There is a tremendous amount of data available online. For example, MDRC provides a host of data files for public use `here <https://www.mdrc.org/available-public-use-files>`_ from the evaluation of public policy initiatives. More generally, `Google Dataset Search <https://datasetsearch.research.google.com>`_ allows to look for all kinds of online data.
 
-Several textbooks above provide an impressive amount of data from research articles. We provide them in a central place `online <https://github.com/OpenSourceEconomics/ose-course-projects/tree/newstruct_emily/datasets>`__.
+Several textbooks above provide an impressive amount of data from research articles. We provide them in a central place `online <https://github.com/OpenSourceEconomics/ose-course-projects/tree/main/datasets>`__.
 
 We collect data from several textbooks.
 
