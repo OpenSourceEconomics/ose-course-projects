@@ -42,7 +42,7 @@ Powered by
 |space| |UNI| |space| |OSE| |space| |GRN|
 
 .. |UNI| image:: images/uni5.jpg
-  :width: 22 %
+  :width: 10 %
   :target: https://www.uni-bonn.de/en
 
 .. |OSE| image:: https://raw.githubusercontent.com/OpenSourceEconomics/ose-logos/main/OSE_logo_RGB.svg
