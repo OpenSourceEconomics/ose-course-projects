@@ -39,7 +39,7 @@ Our two courses `OSE data science <https://ose-data-science.readthedocs.io>`_ an
 Powered by
 ----------
 
-|space| |UNI| |space| |OSE| |space| |GRN|
+|space| |space| |UNI| |space| |OSE| |space| |GRN|
 
 .. |UNI| image:: images/uni5.jpg
   :width: 10 %
@@ -50,7 +50,7 @@ Powered by
   :target: https://open-econ.org
   
 .. |GRN| image:: images/RN_German.png
-  :width: 20 %
+  :width: 17 %
   :target: https://reproducibilitynetwork.de/
 
 .. |space| raw:: html
