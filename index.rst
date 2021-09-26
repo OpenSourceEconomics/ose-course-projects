@@ -42,15 +42,15 @@ Powered by
 |space| |UNI| |space| |OSE| |space| |GRN|
 
 .. |UNI| image:: images/uni5.jpg
-  :width: 10 %
+  :width: 13 %
   :target: https://www.uni-bonn.de/en
 
 .. |OSE| image:: https://raw.githubusercontent.com/OpenSourceEconomics/ose-logos/main/OSE_logo_RGB.svg
-  :width: 22 %
+  :width: 25 %
   :target: https://open-econ.org
   
 .. |GRN| image:: images/RN_German.png
-  :width: 17 %
+  :width: 20 %
   :target: https://reproducibilitynetwork.de/
 
 .. |space| raw:: html
