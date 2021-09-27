@@ -32,7 +32,9 @@ def get_df_census80():
         "YOB",
     ]
 
-    df = pd.read_csv(FILE_PATH_CENSUS80_EXTRACT, sep=" ", usecols=cols, names=cols_names)
+    df = pd.read_csv(
+        FILE_PATH_CENSUS80_EXTRACT, sep=" ", usecols=cols, names=cols_names
+    )
 
     # correct AGEQ
     df.loc[df["CENSUS"] == 80, "AGEQ"] = df["AGEQ"] - 1900
@@ -281,7 +283,16 @@ def get_further_exogenous_regressors(race=True, smsa=True, married=True):
 
 
 def get_region_of_residence_dummies():
-    return ["NEWENG", "MIDATL", "ENOCENT", "WNOCENT", "SOATL", "ESOCENT", "WSOCENT", "MT"]
+    return [
+        "NEWENG",
+        "MIDATL",
+        "ENOCENT",
+        "WNOCENT",
+        "SOATL",
+        "ESOCENT",
+        "WSOCENT",
+        "MT",
+    ]
 
 
 def get_education_name():
@@ -318,9 +329,9 @@ def add_detrended_educational_variables(df, educ_vars=("EDUC")):
 
         for yob in set(df["YOB"]):
             for qob in set(df["QOB"]):
-                df.loc[(df["YOB"] == yob) & (df["QOB"] == qob), f"MV_AVG_{ev}"] = mean_ev.loc[
-                    (yob, qob), "MV_AVG"
-                ]
+                df.loc[
+                    (df["YOB"] == yob) & (df["QOB"] == qob), f"MV_AVG_{ev}"
+                ] = mean_ev.loc[(yob, qob), "MV_AVG"]
 
         df[f"DTRND_{ev}"] = df[ev] - df[f"MV_AVG_{ev}"]
 

@@ -20,7 +20,9 @@ def plot_educ_against_yob(df):
 
         points = np.array(list(zip(x_values, y_values)))[i::4]
 
-        ax.scatter(points[:, 0], points[:, 1], marker="s", s=34, color=colors[i], label=i + 1)
+        ax.scatter(
+            points[:, 0], points[:, 1], marker="s", s=34, color=colors[i], label=i + 1
+        )
 
     ax.set_xlabel("Year of Birth")
     ax.set_ylabel("Years Of Completed Education")
@@ -68,7 +70,9 @@ def plot_log_wkly_earnings_by_qob(df):
     for i in range(4):
 
         points = np.array(list(zip(x_values, y_values)))[i::4]
-        ax.scatter(points[:, 0], points[:, 1], marker="s", s=34, color=colors[i], label=i + 1)
+        ax.scatter(
+            points[:, 0], points[:, 1], marker="s", s=34, color=colors[i], label=i + 1
+        )
 
     ax.set_xlabel("Year of Birth")
     ax.set_ylabel("Log Weekly Earnings")
