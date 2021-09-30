@@ -35,7 +35,7 @@ Some journals provide the data for their published articles as data supplements 
 What are other useful resources for research data?
 ==================================================
 
-There is a tremendous amount of data available online. For example, MDRC provides a host of data files for public use `here <https://www.mdrc.org/available-public-use-files>`_ from the evaluation of public policy initiatives. More generally, `Google Dataset Search <https://datasetsearch.research.google.com>`_ allows you to look for all kinds of online data.
+There is a tremendous amount of data available online. For example, MDRC provides a host of data files for public use `here <https://www.mdrc.org/available-public-use-files>`_ from the evaluation of public policy initiatives. UC Irvine also maintains a `machine learning repository <https://archive-beta.ics.uci.edu/>`_ with several hundred datasets.  More generally, `Google Dataset Search <https://datasetsearch.research.google.com>`_ allows you to look for all kinds of online data.
 
 A primer on finding data is available 'here <https://sebastiantellotrillo.com/resources/primer-where-to-find-data>'_ on the personal website of `Prof. Sebastian Tello-Trillo <https://sebastiantellotrillo.com/>`_. 
 
