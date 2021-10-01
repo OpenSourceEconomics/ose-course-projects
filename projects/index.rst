@@ -103,4 +103,4 @@ Project by `Arbi Kodraj <https://github.com/ArbiKodraj>`_
 .. toctree::
    :maxdepth: 1
 
-   daimler-project/Project-Main
+   deutsch-bank/db-project
