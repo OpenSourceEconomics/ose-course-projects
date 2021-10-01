@@ -40,14 +40,18 @@ Our two courses `OSE data science <https://ose-data-science.readthedocs.io>`_ an
 Powered by
 ----------
 
-|space| |space| |OSE| |space| |GRN|
+|space| |UNI| |space| |OSE| |space| |GRN|
+
+.. |UNI| image:: images/uni5.jpg
+  :width: 11 %
+  :target: https://www.uni-bonn.de/en
 
 .. |OSE| image:: https://raw.githubusercontent.com/OpenSourceEconomics/ose-logos/main/OSE_logo_RGB.svg
-  :width: 22 %
+  :width: 23 %
   :target: https://open-econ.org
   
 .. |GRN| image:: images/RN_German.png
-  :width: 20 %
+  :width: 18 %
   :target: https://reproducibilitynetwork.de/
 
 .. |space| raw:: html
