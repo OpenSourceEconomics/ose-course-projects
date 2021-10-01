@@ -5,7 +5,7 @@ import pandas as pd
 
 def plot_RDD_curve(df, running_variable, outcome, cutoff):
     """Plot RDD curves.
-    
+
     Function splits dataset into treated and untreated group based on running variable
     and plots outcome (group below cutoff is treated, group above cutoff is untreated).
 
@@ -30,8 +30,8 @@ def plot_RDD_curve(df, running_variable, outcome, cutoff):
 
 
 def plot_RDD_curve_colored(df, running_variable, outcome, cutoff, color):
-    """Plot RDD curves. 
-    
+    """Plot RDD curves.
+
     Function splits dataset into treated and untreated group based on running variable
     and plots outcome (group below cutoff is treated, group above cutoff is untreated).
 
@@ -58,7 +58,7 @@ def plot_RDD_curve_CI(
     df, running_variable, outcome, cutoff, lbound, ubound, CI_color, linecolor
 ):
     """Plot RDD curves with confidence intervals.
-    
+
     Function splits dataset into treated and untreated group based on running variable
     and plots outcome (group below cutoff is treated, group above cutoff is untreated).
 

@@ -1,5 +1,4 @@
 """This module contains auxiliary functions for RD predictions used in the main notebook."""
-
 import numpy as np
 import pandas as pd
 import statsmodels as sm
@@ -59,7 +58,7 @@ def calculate_bin_frequency(data, bins):
 def create_groups_dict(data, keys, columns):
     """
     Create a dictionary containing different subsets of a dataset.
-    
+
     Subsets are created using dummies.
 
     Args:
@@ -320,10 +319,10 @@ def bandwidth_sensitivity_summary(
 
 def trim_data(groups_dict, trim_perc, case1, case2):
     """Create trimmed data for upper and lower bound analysis.
-    
+
     Trim the top and bottom percent of students from control or treatment group.
     This can be used for the upper bound and lower bound.
-    
+
     * For lower bound use `case1 = True` and `case2 = False`
     * For upper bound use `case1 = False` and `case2 = True`.
 
@@ -357,9 +356,7 @@ def trim_data(groups_dict, trim_perc, case1, case2):
             control.sort_values("nextGPA", inplace=True, ascending=case1)
             trimmed_students = control.iloc[0:n]
             trimmed_students_ids = list(trimmed_students.identifier)
-            trimmed_control = control[
-                ~control.identifier.isin(trimmed_students_ids)
-            ]
+            trimmed_control = control[~control.identifier.isin(trimmed_students_ids)]
             df = pd.concat([trimmed_control, treat], axis=0)
 
         # If the trim amount is negative, we need to trim the treatment instead
