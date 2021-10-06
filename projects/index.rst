@@ -15,7 +15,7 @@ Make sure you subscribe to the `OSE course project stream <https://bonn-econ-tea
 Kaggle Competitions
 ===================
 
-`Kaggle <https://www.kaggle.com/>`_ hosts numerous (causal) machine learning tasks often sponsored by companies. A typical course project in this context describes the competition you participated in and implements a version of your solution strategy. You can then, for example, explore the impact of alternative numerical components of your strategy and investigate the impact of tuning parameters on its performance.
+`Kaggle <https://www.kaggle.com/>`_ hosts numerous (causal) machine learning tasks often sponsored by companies. In this context, a typical course project describes the competition you participated in and implements a version of your solution strategy. You can then, for example, explore the impact of alternative numerical components of your solution on its performance and investigate the effect of tuning parameters on its performance.
 
 ====================
 Replication Projects
