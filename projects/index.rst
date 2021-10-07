@@ -7,7 +7,7 @@ Grading for `OSE data science <https://ose-data-science.readthedocs.io>`_ and `O
 You are free to select a topic of your choice related to the contents of the respective  class. For example, you can either replicate the core results of a computational publication or apply for the chance to work on a collaboration project with one of our private sector partners. Other project ideas include running a benchmarking exercise for an algorithm, contributing to one of our group's software packages of your choice, or creating a notebook similar to the ones presented in the lectures on a computational topic that interests you. Note that several textbooks explore the implementation of involved computational economic models, porting their implementation to Python can serve as a valuable starting point for your project.
 
 **Note for students taking EPP:**
-Participants of the course "Effective Programming Practices for Economists" by Professor Hans-Martin von Gaudecker are welcome to submit their project for grading in `OSE data science <https://ose-data-science.readthedocs.io>`_ or `OSE scientific computing <https://ose-data-science.readthedocs.io>`_. Note that the project still has to fulfill the topic and submission requirements listed above in addition to any requirements stated by the EPP course. Please reach out in the course Zulip chat for any questions about the project. 
+Participants of the course "Effective Programming Practices for Economists" by Professor Hans-Martin von Gaudecker are welcome to submit their project for grading in `OSE data science <https://ose-data-science.readthedocs.io>`_ or `OSE scientific computing <https://ose-data-science.readthedocs.io>`_. Note that the project still has to fulfill the topic and submission requirements listed above in addition to any requirements stated by the EPP course. Please reach out in the course Zulip chat for any questions about the project.
 
 Make sure you subscribe to the `OSE course project stream <https://bonn-econ-teaching.zulipchat.com/#narrow/stream/300796-OSE-Course.20Projects>`_ in the bonn-econ-teaching `Zulip <https://zulip.com/>`_ chat, where you can post any questions you may have regarding your course project.
 
@@ -15,7 +15,7 @@ Make sure you subscribe to the `OSE course project stream <https://bonn-econ-tea
 Kaggle Competitions
 ===================
 
-*investigate tuning parameter, identify the numerical components in the algorithm, swap-in-swap out components underlying assumptions for prediction / causal model to work*
+`Kaggle <https://www.kaggle.com/>`_ hosts numerous (causal) machine learning tasks often sponsored by companies. In this context, a typical course project describes the competition you participated in and implements a version of your solution strategy. You can then, for example, explore the impact of alternative numerical components of your solution and investigate the effect of tuning parameters on its performance.
 
 ====================
 Replication Projects
@@ -79,7 +79,7 @@ Project by `Annica Gehlen <https://github.com/amageh>`_
 Collaboration Projects
 ----------------------
 
-Examples of collaboration projects with Daimler AG and Deutsch Bank organized in a previous iteration of the `OSE data science course <https://ose-data-science.readthedocs.io/en/latest/index.html>`_ are available below.   
+Examples of collaboration projects with Daimler AG and Deutsch Bank organized in a previous iteration of the `OSE data science course <https://ose-data-science.readthedocs.io/en/latest/index.html>`_ are available below.
 
 Daimler AG
 """"""""""
@@ -97,7 +97,7 @@ Deutsche Bank
 """""""""""""
 
 The Deutsche Bank project uses different modern Machine Learning (ML) methods to detect so-called regret credits, which can be considered as credits that become deficient at some point in time. The project’s scope is to develop AI-related models that can determine the regret-probability of credits and assign it to certain characteristics. One challenge is to shed light on the so-called black-box, where even the AI developers do not know why their AIs make certain decisions. Another challenge is to design the model such that it provides precise results although the data set is imbalanced, that is, it contains many more non-regret credits than regret credits. Moreover, data visualizations are performed to support the result's content to finally present them to the stakeholders.
- 
+
 Project by `Arbi Kodraj <https://github.com/ArbiKodraj>`_
 
 .. toctree::
