@@ -2,14 +2,13 @@
 Projects
 ########
 
-Grading for `OSE data science <https://ose-data-science.readthedocs.io>`_ and `OSE scientific computing <https://ose-data-science.readthedocs.io>`_ is based on a project due at the end of the semester, which should be presented in the form of a Jupyter Notebook. Although I encourage you to code your projects in Python, you may also use R or Julia. You can work on your project using the `Nuvolos.cloud <https://nuvolos.cloud>`_  and share it with Professor Eisenhauer for grading. Alternatively, you can submit the project in the form of a GitHub repository or pull request on an existing repository (depending on your project). Reproducibility is a cornerstone of sound computational work, so please ensure that we can run your project notebook from beginning to end without any error. Please discuss your project idea with Professor Eisenhauer.
+Grading for `OSE data science <https://ose-data-science.readthedocs.io>`_ and `OSE scientific computing <https://ose-data-science.readthedocs.io>`_ is based on a group project due at the end of the semester, which should be presented in the form of a Jupyter Notebook. We encourage you to code your projects in Python, you may also use R or Julia. You can submit the project in the form of a GitHub repository or pull request on an existing repository (depending on your project).
 
-You are free to select a topic of your choice related to the contents of the respective  class. For example, you can either replicate the core results of a computational publication or apply for the chance to work on a collaboration project with one of our private sector partners. Other project ideas include running a benchmarking exercise for an algorithm, contributing to one of our group's software packages of your choice, or creating a notebook similar to the ones presented in the lectures on a computational topic that interests you. Note that several textbooks explore the implementation of involved computational economic models, porting their implementation to Python can serve as a valuable starting point for your project.
+You are free to select a topic of your choice related to the contents of the respective class. For example, you can either replicate the core results of a computational publication or apply for the chance to work on a collaboration project with one of our private sector partners. Other project ideas include running a benchmarking exercise for an algorithm, contributing to one of our group's software packages of your choice, or creating a notebook similar to the ones presented in the lectures on a computational topic that interests you. Note that several textbooks explore the implementation of involved computational economic models, porting their implementation to Python can serve as a valuable starting point for your project.
 
 **Note for students taking EPP:**
-Participants of the course "Effective Programming Practices for Economists" by Professor Hans-Martin von Gaudecker are welcome to submit their project for grading in `OSE data science <https://ose-data-science.readthedocs.io>`_ or `OSE scientific computing <https://ose-data-science.readthedocs.io>`_. Note that the project still has to fulfill the topic and submission requirements listed above in addition to any requirements stated by the EPP course. Please reach out in the course Zulip chat for any questions about the project.
 
-Make sure you subscribe to the `OSE course project stream <https://bonn-econ-teaching.zulipchat.com/#narrow/stream/300796-OSE-Course.20Projects>`_ in the bonn-econ-teaching `Zulip <https://zulip.com/>`_ chat, where you can post any questions you may have regarding your course project.
+Participants of the course "Effective Programming Practices for Economists" by Professor Hans-Martin von Gaudecker are welcome to submit their project for grading in `OSE data science <https://ose-data-science.readthedocs.io>`_ or `OSE scientific computing <https://ose-data-science.readthedocs.io>`_. Note that the project still has to fulfill the topic and submission requirements listed above in addition to any requirements stated by the EPP course. Please reach out in the course Zulip chat for any questions about the project.
 
 ===================
 Kaggle Competitions
@@ -21,19 +20,7 @@ Kaggle Competitions
 Replication Projects
 ====================
 
-A typical replication notebook has the following structure:
-
-* presentation of baseline article with proper citation and brief summary
-
-* using causal graphs to illustrate the authors' identification strategy
-
-* replication of selected key results
-
-* critical assessment of quality
-
-* independent contribution, e.g. additional external evidence, robustness checks, visualization
-
-There might be good reason to deviate from this structure. If so, please simply document your reasoning and go ahead. Please use the opportunity to review other student projects for some inspiration as well.
+You can replicate and extend a research article related to the topics of the course. A typical replication notebook starts with presenting the baseline article, reproducing selected key results, critical assessment of quality, and an independent contribution such as robustness check and visualizations.
 
 ======================
 Collaboration Projects

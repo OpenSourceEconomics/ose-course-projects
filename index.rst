@@ -36,6 +36,7 @@ Our two courses `OSE data science <https://ose-data-science.readthedocs.io>`_ an
    reproducibility/index
    frequently-asked-questions/index
 
+Make sure you subscribe to the `OSE course project stream <https://bonn-econ-teaching.zulipchat.com/#narrow/stream/300796-OSE-Course.20Projects>`_ in the bonn-econ-teaching `Zulip <https://zulip.com/>`_ chat, where you can post any questions you may have regarding your course project.
 
 Powered by
 ----------
@@ -49,7 +50,7 @@ Powered by
 .. |OSE| image:: https://raw.githubusercontent.com/OpenSourceEconomics/ose-logos/main/OSE_logo_RGB.svg
   :width: 23 %
   :target: https://open-econ.org
-  
+
 .. |GRN| image:: images/RN_German.png
   :width: 18 %
   :target: https://reproducibilitynetwork.de/
