@@ -22,11 +22,6 @@ Why do we work in groups?
 
 The need for collaboration are ubiquitous in business and research. This projects allows you to practice collaborative work and the supporting tools.
 
-Do I get any extra credit for ensuring full reproducibility of my project using GitHub Actions?
-===============================================================================================
-
-Yes, everybody who successfully sets up a continuous integration workflow will get an extra bump in their grade.
-
 Where can I look for publications that provide the data behind their research?
 ==============================================================================
 
