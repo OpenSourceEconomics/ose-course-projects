@@ -20,7 +20,7 @@ Kaggle Competitions
 Replication Projects
 ====================
 
-You can replicate and extend a research article related to the topics of the course. A typical replication notebook starts with presenting the baseline article, reproducing selected key results, critical assessment of quality, and an independent contribution such as robustness check and visualizations.
+You can replicate and extend a research article related to the topics of the course. A typical replication notebook starts with presenting the baseline article, reproducing selected key results, critical assessment of quality, and an independent contribution such as robustness check and visualizations. As a starting point for the introductory part of your notebook, please consider the recent article by Berk & al. (2017) on `How to Write an Effective Referee Report <https://www.aeaweb.org/articles?id=10.1257/jep.31.1.231>`_.
 
 ======================
 Collaboration Projects
