@@ -32,6 +32,7 @@ Our two courses `OSE data science <https://ose-data-science.readthedocs.io>`_ an
 
    projects/index
    sample-projects/index
+   partners/index
    repository-template/index
    reproducibility/index
    frequently-asked-questions/index
